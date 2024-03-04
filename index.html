@@ -1,56 +1,74 @@
+<!--me quede en 1:09:29-->
+
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confitería La Ideal | Restaurant y Bar Notable </title>
+
+    <meta name="description" content="Sitio web de Confitería La Ideal, Restaurant y Bar Notable de Buenos Aires inaugurado en 1912">
+
+    <!--OPEN GRAPH-->
+    <meta property="og:title" content="Confitería La Ideal | Restaurant y Bar Notable">
+    <meta property="og:description" content="Sitio web de Confitería La Ideal, Restaurant y Bar Notable de Buenos Aires inaugurado en 1912">
+    <meta property="og:image" content="imagenes/03.jpg">
+    <meta property="og:image:alt" content="Imagen del salón principal de Confiteria La Ideal">
+
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#09f"> <!--color de la barra-->
+
+    <link rel="icon" type="image/png" href="imagenes/favicon.ico">
     <script src="https://kit.fontawesome.com/572e23ca6a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/estilos.css">
-    <link rel="icon" href="imagenes/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Josefin+Sans:wght@300;500&display=swap" rel="stylesheet">
-    <title>Confitería La Ideal</title>
 </head>
 
 <body>
     
     <header>
-        <div id="top-header">
-            <div id="logo">
-                <a href="index.html"><img src="imagenes/LogoLaIdealGris.png" alt="Logo de Confiteria La Ideal"></a>
-            </div>
-
-            <nav>
-                <div id="menu">
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="menu.html">Menú</a></li>
-                        <li><a href="historia.html">Historia</a></li>
-                        <li><a href="ubicacion.html">Ubicación</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+        <a href="index.html"><img width=100 src="imagenes/LogoLaIdealGris.png" alt="Logo de Confiteria La Ideal"></a>
+        <nav>
+            <ul>
+                <li class="menu-item"><a href="index.html">Inicio</a></li>
+                <li class="menu-item"><a href="menu.html">Menú</a></li>
+                <li class="menu-item"><a href="historia.html">Historia</a></li>
+                <li class="menu-item"><a href="ubicacion.html">Ubicación</a></li>
+                <li class="menu-item"><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
     
     <main>
         <section>
-            <div id="welcome">
-                <h1 class="title">
-                    Bienvenidos a Confitería La Ideal
-                </h1>
-                <img src="imagenes/03.jpg" alt="Salon principal de Confiteria La Ideal">
-                <p>Café, Restaurant y Bar Notable. Un salón majestuoso desde 1912.</p>
-            </div>
+            <article>
+                <header>
+                    <h1>Bienvenidos a Confitería La Ideal</h1>
+                </header>
+                <p>
+                    Café, Restaurant y Bar Notable. Un salón majestuoso desde 1912.
+                </p>
+                <footer>
+                    <img width=600 src="imagenes/03.jpg" title="Salón principal de Confitería La Ideal" alt="Imagen del salón principal de Confiteria La Ideal">
+                <footer/>
+            </article>
         </section>
     </main>
     
     <footer>
-        <a href="https://www.instagram.com/confiterialaideal/" target="_blank"><i class="fa-brands fa-instagram" style="color: #ffffff;" aria-hidden="true"></i></a>
-        <a href="https://www.facebook.com/Confiteria-La-Ideal-100068947175200/" target="_blank"><i class="fa-brands fa-facebook" style="color: #ffffff;" aria-hidden="true"></i></a>
-        <p>@2023 Confitería La Ideal - Todos los derechos reservados</p>
+        <a 
+            href="https://www.instagram.com/confiterialaideal/" target="_blank" rel="noreferrer">
+            <i class="fa-brands fa-instagram" style="color: #ffffff;" 
+            aria-hidden="true"></i>
+        </a>
+        <a 
+            href="https://www.facebook.com/Confiteria-La-Ideal-100068947175200/" target="_blank" rel="noreferrer">
+            <i class="fa-brands fa-facebook" style="color: #ffffff;" aria-hidden="true"></i>
+        </a>
+        <p>© 2023 Confitería La Ideal - Todos los derechos reservados</p>
     </footer>
 
 </body>
