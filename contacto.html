@@ -4,69 +4,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confitería La Ideal | Restaurant y Bar Notable </title>
+
+    <meta name="description" content="Sitio web de Confitería La Ideal, Restaurant y Bar Notable de Buenos Aires inaugurado en 1912">
+
+    <!--OPEN GRAPH-->
+    <meta property="og:title" content="Confitería La Ideal | Restaurant y Bar Notable">
+    <meta property="og:description" content="Sitio web de Confitería La Ideal, Restaurant y Bar Notable de Buenos Aires inaugurado en 1912">
+    <meta property="og:image" content="imagenes/03.jpg">
+    <meta property="og:image:alt" content="Imagen del salón principal de Confiteria La Ideal">
+
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#09f"> <!--color de la barra-->
+
+    <link rel="icon" type="image/png" href="imagenes/favicon.ico">
     <script src="https://kit.fontawesome.com/572e23ca6a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/estilos.css">
-    <link rel="icon" href="imagenes/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Josefin+Sans:wght@300;500&display=swap" rel="stylesheet">
-    <title>Confitería La Ideal</title>
 </head>
 
 <body>
     
     <header>
-        <div id="top-header">
-            <div id="logo">
-                <a href="index.html"><img src="imagenes/LogoLaIdealGris.png" alt="Logo de Confiteria La Ideal"></a>
-            </div>
-
-            <nav>
-                <div id="menu">
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="menu.html">Menú</a></li>
-                        <li><a href="historia.html">Historia</a></li>
-                        <li><a href="ubicacion.html">Ubicación</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+        <a href="index.html"><img width=100 src="imagenes/LogoLaIdealGris.png" alt="Logo de Confiteria La Ideal"></a>
+        <nav>
+            <ul>
+                <li class="menu-item"><a href="index.html">Inicio</a></li>
+                <li class="menu-item"><a href="menu.html">Menú</a></li>
+                <li class="menu-item"><a href="historia.html">Historia</a></li>
+                <li class="menu-item"><a href="ubicacion.html">Ubicación</a></li>
+                <li class="menu-item"><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
         <section>
+            <h2>Preguntas frecuentes</h2>
+
+            <details open>   
+                <summary>Cuál es el horario de atención?</summary>
+                <p>El horario de atención es de lunes a viernes de 8 a 20hs y sábados de 9 a 14hs.</p>
+            </details>
+
+            <details>   
+                <summary>Se pueden realizar reservas?</summary>
+                <p>No se toman reservas, es por orden de llegada.</p>
+            </details>
+
+            <details>   
+                <summary>Se realizan eventos especiales?</summary>
+                <p>Para eventos especiales contáctese por teléfono o a través de nuestro formulario de contacto.</p>
+            </details>
+        </section>
+
+        <section>
             <h2>Contáctenos</h2>
-            <!-- <form action="show_data.html" method="POST" target="_blank"> Anterior-->
-            <form id="formularioContacto">   
+            <form method="post" action="/" id="formularioContacto">   
                 <fieldset>
                     <legend>Envíenos sus consultas o sugerencias</legend>
-                    
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required><br>
-                   
+                    <input type="text" id="name" name="name" placeholder="Nombre" required><br>
                     <input type="email" id="email" name="email" placeholder="E-mail" required><br>
-                
-                    <textarea id="mensaje" maxlength="500" name="mensaje" rows="10" placeholder="Mensaje" required></textarea><br>
-                    <input type="reset" value="Borrar">
-                    <!-- <input type="submit" value="Enviar" onclick="llenarFormulario()"> Anterior-->
-                    <button type="button" onclick="llenarFormulario()">Enviar</button>
+                    <textarea id="message" maxlength="500" name="message" rows="10" placeholder="Mensaje" required></textarea><br>
+                    <button type="reset">Borrar</button>
+                    <button>Enviar</button>
                 </fieldset>
-            </form>    
-            <!-- </form> -->
+            </form>
         </section>
     </main>
-  
-    <script>
-        function llenarFormulario() {
-            var nombre = document.getElementById("nombre").value;
-            var email = document.getElementById("email").value;
-            var mensaje = document.getElementById("mensaje").value;
-
-            var datos = "Nombre: " + nombre + "<br>Email: " + email + "<br>Mensaje: " + mensaje;
-            document.getElementById("formularioContacto").innerHTML = datos;
-        }
-    </script>
 
     <footer>
         <a href="https://www.instagram.com/confiterialaideal/" target="_blank"><i class="fa-brands fa-instagram" style="color: #ffffff;" aria-hidden="true"></i></a>
