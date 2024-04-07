@@ -1,92 +1,196 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Confitería La Ideal | Restaurant y Bar Notable</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Confitería La Ideal | Restaurant y Bar Notable </title>
-
-    <meta name="description" content="Sitio web de Confitería La Ideal, Restaurant y Bar Notable de Buenos Aires inaugurado en 1912">
+    <meta
+      name="description"
+      content="Sitio web de Confitería La Ideal, Restaurant y Bar Notable de Buenos Aires inaugurado en 1912"
+    />
 
     <!--OPEN GRAPH-->
-    <meta property="og:title" content="Confitería La Ideal | Restaurant y Bar Notable">
-    <meta property="og:description" content="Sitio web de Confitería La Ideal, Restaurant y Bar Notable de Buenos Aires inaugurado en 1912">
-    <meta property="og:image" content="imagenes/03.jpg">
-    <meta property="og:image:alt" content="Imagen del salón principal de Confiteria La Ideal">
+    <meta
+      property="og:title"
+      content="Confitería La Ideal | Restaurant y Bar Notable"
+    />
+    <meta
+      property="og:description"
+      content="Sitio web de Confitería La Ideal, Restaurant y Bar Notable de Buenos Aires inaugurado en 1912"
+    />
+    <meta property="og:image" content="imagenes/03.jpg" />
+    <meta
+      property="og:image:alt"
+      content="Imagen del salón principal de Confiteria La Ideal"
+    />
 
-    <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#09f"> <!--color de la barra-->
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#09f" />
+    <!--color de la barra-->
 
-    <link rel="icon" type="image/png" href="imagenes/favicon.ico">
-    <script src="https://kit.fontawesome.com/572e23ca6a.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Josefin+Sans:wght@300;500&display=swap" rel="stylesheet">
-</head>
+    <link rel="icon" type="image/png" href="imagenes/favicon.ico" />
+    <link rel="icon" type="image/png" href="imagenes/favicon.ico" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./css/estilos.css" />
+  </head>
 
-<body>
-    
-    <header>
-        <a href="index.html"><img width=100 src="imagenes/LogoLaIdealGris.png" alt="Logo de Confiteria La Ideal"></a>
-        <nav>
-            <ul>
-                <li class="menu-item"><a href="index.html">Inicio</a></li>
-                <li class="menu-item"><a href="menu.html">Menú</a></li>
-                <li class="menu-item"><a href="historia.html">Historia</a></li>
-                <li class="menu-item"><a href="contacto.html">Contacto</a></li>
-            </ul>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <a href="#" class="title-logo">
+          <img
+            class="title-logo__img"
+            src="./imagenes/LogoLaIdealGris.png"
+            alt="Logo de Confiteria La Ideal"
+          />
+          <span class="title-logo__text">La Ideal</span>
+        </a>
+
+        <button class="btn-toggle">
+          <input type="checkbox" class="btn-toggle__checkbox" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="currentColor"
+            class="bi bi-list"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+            />
+          </svg>
+        </button>
+
+        <nav class="navbar">
+          <ul class="navbar-items">
+            <li class="navbar-item">
+              <a href="/" class="navbar-link navbar-link__logo">
+                <i class="bi bi-house-door-fill"></i>
+                Inicio
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="./menu.html" class="navbar-link navbar-link__logo">
+                <i class="bi bi-clipboard-fill"></i>
+                Menú
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="./historia.html" class="navbar-link navbar-link__logo">
+                <i class="bi bi-bookmark-fill"></i>
+                Historia
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="./contacto.html" class="navbar-link navbar-link__logo">
+                <i class="bi bi-telephone-fill"></i>
+                Contacto
+              </a>
+            </li>
+          </ul>
         </nav>
+      </div>
     </header>
 
     <main>
-        <section>
-            <h2>Preguntas frecuentes</h2>
+      <section>
+        <h2>Preguntas frecuentes</h2>
 
-            <details open>   
-                <summary>Cuál es el horario de atención?</summary>
-                <p>El horario de atención es de lunes a viernes de 8 a 20hs y sábados de 9 a 14hs.</p>
-            </details>
+        <details open>
+          <summary>Cuál es el horario de atención?</summary>
+          <p>
+            El horario de atención es de lunes a viernes de 8 a 20hs y sábados
+            de 9 a 14hs.
+          </p>
+        </details>
 
-            <details>   
-                <summary>Se pueden realizar reservas?</summary>
-                <p>No se toman reservas, es por orden de llegada.</p>
-            </details>
+        <details>
+          <summary>Se pueden realizar reservas?</summary>
+          <p>No se toman reservas, es por orden de llegada.</p>
+        </details>
 
-            <details>   
-                <summary>Se realizan eventos especiales?</summary>
-                <p>Para eventos especiales contáctese por teléfono o a través de nuestro formulario de contacto.</p>
-            </details>
-        </section>
+        <details>
+          <summary>Se realizan eventos especiales?</summary>
+          <p>
+            Para eventos especiales contáctese por teléfono o a través de
+            nuestro formulario de contacto.
+          </p>
+        </details>
+      </section>
 
-        <section>
-            <h2>Contáctenos</h2>
-            <form method="post" action="/" id="formularioContacto">   
-                <fieldset>
-                    <legend>Envíenos sus consultas o sugerencias</legend>
-                    <input type="text" id="name" name="name" placeholder="Nombre" required><br>
-                    <input type="email" id="email" name="email" placeholder="E-mail" required><br>
-                    <textarea id="message" maxlength="500" name="message" rows="10" placeholder="Mensaje" required></textarea><br>
-                    <button type="reset">Borrar</button>
-                    <button>Enviar</button>
-                </fieldset>
-            </form>
-        </section>
+      <section>
+        <h2>Contáctenos</h2>
+        <form method="post" action="/" id="formularioContacto">
+          <fieldset>
+            <legend>Envíenos sus consultas o sugerencias</legend>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Nombre"
+              required
+            /><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="E-mail"
+              required
+            /><br />
+            <textarea
+              id="message"
+              maxlength="500"
+              name="message"
+              rows="10"
+              placeholder="Mensaje"
+              required
+            ></textarea
+            ><br />
+            <button type="reset">Borrar</button>
+            <button>Enviar</button>
+          </fieldset>
+        </form>
+      </section>
     </main>
 
     <footer>
-        <a 
-            href="https://www.instagram.com/confiterialaideal/" target="_blank" rel="noreferrer">
-            <i class="fa-brands fa-instagram" style="color: #ffffff;" 
-            aria-hidden="true"></i>
-        </a>
-        <a 
-            href="https://www.facebook.com/Confiteria-La-Ideal-100068947175200/" target="_blank" rel="noreferrer">
-            <i class="fa-brands fa-facebook" style="color: #ffffff;" aria-hidden="true"></i>
-        </a>
-        <p>© 2024 Confitería La Ideal | Desarrollado por Codo a Codo</p>
+      <a
+        href="https://www.instagram.com/confiterialaideal/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <i
+          class="fa-brands fa-instagram"
+          style="color: #ffffff"
+          aria-hidden="true"
+        ></i>
+      </a>
+      <a
+        href="https://www.facebook.com/Confiteria-La-Ideal-100068947175200/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <i
+          class="fa-brands fa-facebook"
+          style="color: #ffffff"
+          aria-hidden="true"
+        ></i>
+      </a>
+      <p>© 2024 Confitería La Ideal | Desarrollado por Codo a Codo</p>
     </footer>
-
-</body>
-
+  </body>
 </html>
