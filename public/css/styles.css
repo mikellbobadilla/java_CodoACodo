@@ -1,0 +1,92 @@
+@import url(./fonts.css);
+
+:root {
+  --white: #fff;
+  --color: #212529;
+  --line-color: rgb(233, 214, 178);
+  --accent-500: #a97513;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans Pro", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-weight: 400;
+  background-color: var(--white);
+  color: var(--color);
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo-title {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  transition: 0.3s opacity linear;
+}
+
+.logo-title:hover {
+  opacity: 0.7;
+}
+
+.line-br {
+  border: 1px solid var(--line-color);
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 100%;
+}
+
+.header-nav {
+  width: 100%;
+  max-width: 1100px;
+  margin: 20px auto;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav-item {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.nav-item__link {
+  text-decoration: none;
+  color: var(--color);
+  font-weight: 400;
+  font-size: 20px;
+  transition: 0.3s color linear;
+}
+
+.nav-item__link:hover {
+  color: var(--accent-500);
+}
+
+@media (width >= 768px) {
+  .nav-items {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .nav-item {
+    width: fit-content;
+  }
+}
