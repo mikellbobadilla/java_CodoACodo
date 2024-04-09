@@ -20,3 +20,9 @@ El sitio cuenta con 4 páginas desarrolladas con:
 - Curso de [HTML](https://www.youtube.com/watch?v=3nYLTiY5skU)
 - Curso de [CSS](https://www.youtube.com/watch?v=hrxjBqZWsb0)
 - Curso de [JavaScript](https://www.youtube.com/watch?v=QoC4RxNIs5M)
+
+## Referencias
+
+https://laideal.ar/index.html
+
+https://barlosgalgos.com.ar/
