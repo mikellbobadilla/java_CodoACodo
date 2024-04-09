@@ -80,6 +80,13 @@ body {
   color: var(--accent-500);
 }
 
+.carrousel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+}
+
 @media (width >= 768px) {
   .nav-items {
     flex-direction: row;
