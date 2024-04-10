@@ -98,17 +98,6 @@ body {
   }
 }
 
-@media (width >= 768px) {
-  .nav-items {
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-
-  .nav-item {
-    width: fit-content;
-  }
-}
-
 .main {
   width: 100%;
   max-width: 1280px;
@@ -186,4 +175,20 @@ body {
   text-decoration: none;
   color: var(--color);
   font-weight: 400;
+}
+
+@media (width >= 768px) {
+  .nav-items {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .nav-item {
+    width: fit-content;
+  }
+
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }
