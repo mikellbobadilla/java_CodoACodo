@@ -45,8 +45,31 @@
       </nav>
     </header>
 
-    <main>
+    <main class="container-xxl">
       <section>
+        <hr class="my-4 line-br" />
+        <h1>
+          <img
+            class="title-img"
+            src="./public/images/tit_historia.svg"
+            alt="Logo que tiene como título 'Nuestra Historia'"
+          />
+        </h1>
+        <hr class="my-4 line-br" />
+        <picture class="history-picture">
+          <source
+            srcset="./public/images/historia_1_responsive.jpg"
+            media="(width <= 768px)"
+            aria-label="Imagen en donde se muestran personajes famosos de la historia"
+          />
+          <img
+            src="./public/images/historia_1.jpg"
+            alt="Imagen en donde se muestran personajes famosos de la historia"
+          />
+        </picture>
+      </section>
+
+      <!-- <section>
         <article>
           <h2>Nuestra historia</h2>
           <p>
@@ -110,10 +133,10 @@
             allowfullscreen
           ></iframe>
         </article>
-      </section>
+      </section> -->
     </main>
 
-    <footer>
+    <!-- <footer>
       <a
         href="https://www.instagram.com/confiterialaideal/"
         target="_blank"
@@ -137,6 +160,6 @@
         ></i>
       </a>
       <p>© 2024 Confitería La Ideal | Desarrollado por Codo a Codo</p>
-    </footer>
+    </footer> -->
   </body>
 </html>
