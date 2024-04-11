@@ -4,7 +4,7 @@
   --white: #fff;
   --color: #212529;
   --line-color: rgb(233, 214, 178);
-  --accent-500: #a97513;
+  --accent-500: #5c3e08;
 }
 
 *,
@@ -48,7 +48,6 @@ body {
   border: 1px solid var(--line-color);
   width: 80%;
   margin: 0 auto;
-  border-radius: 100%;
 }
 
 .header-nav {
@@ -107,10 +106,10 @@ body {
 
 .img-text {
   display: block;
-  width: 100%;
-  max-width: 720px;
   margin: 0 auto;
-  aspect-ratio: 16/7;
+  width: 100%;
+  height: auto;
+  max-width: 723px;
 }
 
 .section-images {
@@ -191,4 +190,17 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
   }
+}
+
+.title-img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.history-picture img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  aspect-ratio: auto;
 }
