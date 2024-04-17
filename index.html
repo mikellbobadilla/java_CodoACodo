@@ -16,36 +16,40 @@
   </head>
   <body>
     <header class="header">
-      <a href="/" class="logo-title">
+      <a href="/" class="header-title">
         <img
-          width="235"
-          height="204"
           src="./public/images/logo_title.png"
-          alt="Logo de La Ideal"
-          class="logo-title__img"
+          alt="Logo La Ideal"
+          class="header-title__logo img-fluid"
         />
       </a>
-      <hr class="line-br" />
-      <nav class="header-nav">
-        <ul class="nav-items">
-          <li class="nav-item">
-            <a href="/" class="nav-item__link">Inicio</a>
+
+      <hr class="divider" />
+
+      <nav class="navigation">
+        <ul class="navigation-items">
+          <li class="navigation-item">
+            <a href="/historia" class="navigation-link">Historia</a>
           </li>
-          <li class="nav-item">
-            <a href="./historia.html" class="nav-item__link">Historia</a>
+          <li class="navigation-item">
+            <a href="/historia" class="navigation-link">Menú</a>
           </li>
-          <li class="nav-item">
-            <a href="./menu.html" class="nav-item__link">Menú</a>
+
+          <li class="navigation-item">
+            <a href="/historia" class="navigation-link">Contacto</a>
           </li>
-          <li class="nav-item">
-            <a href="./contacto.html" class="nav-item__link">Contacto</a>
+
+          <li class="navigation-item">
+            <a href="/historia" class="navigation-link">Galería</a>
           </li>
         </ul>
       </nav>
     </header>
 
+    <hr class="divider" />
+
     <main class="main">
-      <hr class="my-4 line-br" />
+      <!-- Carrousel -->
       <section class="mb-3">
         <div
           id="carouselExampleInterval"
@@ -56,21 +60,21 @@
             <div class="active carousel-item" data-bs-interval="1500">
               <img
                 src="./public/images/carrousel_1.jpg"
-                class="d-block w-100 carrousel-img"
+                class="d-block w-100 carrousel-img img-fluid"
                 alt="..."
               />
             </div>
             <div class="carousel-item" data-bs-interval="2000">
               <img
                 src="./public/images/carrousel_2.jpg"
-                class="d-block w-100 carrousel-img"
+                class="d-block w-100 carrousel-img img-fluid"
                 alt="..."
               />
             </div>
             <div class="carousel-item">
               <img
                 src="./public/images/carrousel_3.jpg"
-                class="d-block w-100 carrousel-img"
+                class="d-block w-100 carrousel-img img-fluid"
                 alt="..."
               />
             </div>
@@ -95,43 +99,68 @@
           </button>
         </div>
       </section>
-      <hr class="my-4 line-br" />
-      <section>
+      <hr class="divider" />
+      <section class="section-home">
         <img
-          width="723"
-          height="277"
-          class="img-text"
+          class="d-block mx-auto img-fluid"
           src="./public/images/texto_home.png"
           alt="Imgen que contiene un texto 'Viva una unica experiencia en nuestro centro porteño'"
         />
-      </section>
-      <hr class="my-4 line-br" />
-      <section class="section-images">
-        <img src="./public/images/home_1.jpg" alt="Image template" />
 
-        <img src="./public/images/home_2.jpg" alt="Image template" />
+        <hr class="divider" />
 
-        <img src="./public/images/home_3.jpg" alt="Image template" />
+        <div class="images-container">
+          <ul class="images">
+            <li>
+              <img
+                class="img-fluid"
+                src="./public/images/home_1.jpg"
+                alt="Imagen de un postre dentro de nuesto menú La Ideal"
+              />
+            </li>
+
+            <li>
+              <img
+                class="img-fluid"
+                src="./public/images/home_2.jpg"
+                alt="Imagen de un postre dentro de nuesto menú La Ideal"
+              />
+            </li>
+
+            <li>
+              <img
+                class="img-fluid"
+                src="./public/images/home_3.jpg"
+                alt="Imagen de un postre dentro de nuesto menú La Ideal"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
     <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-about-us">
-          <h6 class="about-us-title">
-            Confíteria <span class="about-us__brand">LA IDEAL©</span>
-          </h6>
-          <p>Café, Restaurant y Bar Notable</p>
-          <p>Un salón majestuoso desde 1912</p>
-          <p>Suipacha 384, CABA</p>
-        </div>
+      <section class="about-section">
+        <h6>CONFITERIA <span>LA IDEAL©</span></h6>
+        <p>Café, Restaurant y Bar Notable</p>
+        <p>Un salón majestuoso desde 1912</p>
+        <p>Suipacha 384, CABA</p>
+      </section>
 
-        <div class="footer-contact">
-          <h6 class="about-us-title">Instagram</h6>
-          <p>Siganos en las redes</p>
-          <a href="#" target="_blank">@confiterilaideal</a>
-        </div>
-      </div>
+      <section class="contact-section">
+        <h6>INSTAGRAM</h6>
+        <p>Siganos en las redes</p>
+        <a href="#" target="_blank">@confiterilaideal</a>
+      </section>
+
+      <section class="contact-section">
+        <h6>DESARROLLADO</h6>
+        <p>Para la gente de Codo a Codo</p>
+        <p>
+          La página oficial esta
+          <a href="https://laideal.ar/index.html">aqui</a>
+        </p>
+      </section>
     </footer>
 
     <script defer src="./public/js/bootstrap.min.js"></script>
