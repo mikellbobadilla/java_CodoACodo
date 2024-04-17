@@ -55,6 +55,7 @@ body {
   align-items: center;
   gap: 12px;
   list-style: none;
+  padding: 0;
 }
 
 .navigation-item {
