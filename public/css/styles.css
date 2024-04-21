@@ -165,6 +165,67 @@ body {
   aspect-ratio: 1/1;
 }
 
+.section-questions {
+  margin: 12px auto;
+}
+
+.section-questions h2 {
+  text-align: center;
+  font-size: 35px;
+}
+
+.section-questions details {
+  width: 100%;
+  max-width: 700px;
+  margin: 18px auto;
+}
+
+.section-questions details > summary {
+  font-size: 25px;
+}
+
+.section-questions details > p {
+  font-size: 18px;
+}
+
+.section-form {
+  margin: 12px auto;
+}
+
+.section-form h2 {
+  text-align: center;
+  font-size: 35px;
+}
+
+.section-form > form {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.section-form > form label {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-form > form button {
+  width: 100%;
+  display: inline-block;
+  margin: 8px auto;
+  border: none;
+  background-color: var(--color);
+  color: var(--white);
+  font-weight: 500;
+  transition: 158ms transform ease-in-out, 158ms background-color ease-in-out;
+}
+
+.section-form > form button:hover {
+  background-color: #31363b;
+}
+.section-form > form button:active {
+  transform: translateY(2px);
+}
+
 @media (width >= 768px) {
   .navigation-items {
     flex-direction: row;

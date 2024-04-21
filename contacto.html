@@ -17,36 +17,36 @@
 
   <body>
     <header class="header">
-      <a href="/" class="logo-title">
+      <a href="/" class="header-title">
         <img
-          width="235"
-          height="204"
           src="./public/images/logo_title.png"
-          alt="Logo de La Ideal"
-          class="logo-title__img"
+          alt="Logo La Ideal"
+          class="header-title__logo img-fluid"
         />
       </a>
-      <hr class="line-br" />
-      <nav class="header-nav">
-        <ul class="nav-items">
-          <li class="nav-item">
-            <a href="/" class="nav-item__link">Inicio</a>
+
+      <hr class="divider" />
+
+      <nav class="navigation">
+        <ul class="navigation-items">
+          <li class="navigation-item">
+            <a href="./historia.html" class="navigation-link">Historia</a>
           </li>
-          <li class="nav-item">
-            <a href="./historia.html" class="nav-item__link">Historia</a>
+
+          <li class="navigation-item">
+            <a href="./contacto.html" class="navigation-link">Contacto</a>
           </li>
-          <li class="nav-item">
-            <a href="./menu.html" class="nav-item__link">Menú</a>
-          </li>
-          <li class="nav-item">
-            <a href="./contacto.html" class="nav-item__link">Contacto</a>
+
+          <li class="navigation-item">
+            <a href="./galeria.html" class="navigation-link">Galería</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main>
-      <section>
+    <main class="container-xxl">
+      <hr class="divider" />
+      <section class="section-questions">
         <h2>Preguntas frecuentes</h2>
 
         <details open>
@@ -71,34 +71,38 @@
         </details>
       </section>
 
-      <section>
+      <section class="section-form">
+        <hr class="divider" />
         <h2>Contáctenos</h2>
-        <form method="post" action="/" id="formularioContacto">
+        <form method="post" action="#">
           <fieldset>
             <legend>Envíenos sus consultas o sugerencias</legend>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Nombre"
-              required
-            /><br />
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="E-mail"
-              required
-            /><br />
-            <textarea
-              id="message"
-              maxlength="500"
-              name="message"
-              rows="10"
-              placeholder="Mensaje"
-              required
-            ></textarea
-            ><br />
+            <label>
+              Nombre:
+              <input type="text" name="name" placeholder="Pepito..." required />
+            </label>
+            <br />
+            <label>
+              E-mail:
+              <input
+                type="text"
+                name="name"
+                placeholder="user@gamil.com"
+                required
+              />
+            </label>
+            <br />
+            <label>
+              Mensaje:
+              <textarea
+                maxlength="500"
+                name="message"
+                rows="5"
+                placeholder="Mensaje"
+                required
+              ></textarea>
+            </label>
+            <br />
             <button type="reset">Borrar</button>
             <button>Enviar</button>
           </fieldset>
@@ -106,30 +110,28 @@
       </section>
     </main>
 
-    <footer>
-      <a
-        href="https://www.instagram.com/confiterialaideal/"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <i
-          class="fa-brands fa-instagram"
-          style="color: #ffffff"
-          aria-hidden="true"
-        ></i>
-      </a>
-      <a
-        href="https://www.facebook.com/Confiteria-La-Ideal-100068947175200/"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <i
-          class="fa-brands fa-facebook"
-          style="color: #ffffff"
-          aria-hidden="true"
-        ></i>
-      </a>
-      <p>© 2024 Confitería La Ideal | Desarrollado por Codo a Codo</p>
+    <footer class="footer">
+      <section class="about-section">
+        <h6>CONFITERIA <span>LA IDEAL©</span></h6>
+        <p>Café, Restaurant y Bar Notable</p>
+        <p>Un salón majestuoso desde 1912</p>
+        <p>Suipacha 384, CABA</p>
+      </section>
+
+      <section class="contact-section">
+        <h6>INSTAGRAM</h6>
+        <p>Siganos en las redes</p>
+        <a href="#" target="_blank">@confiterilaideal</a>
+      </section>
+
+      <section class="contact-section">
+        <h6>DESARROLLADO</h6>
+        <p>Para la gente de Codo a Codo</p>
+        <p>
+          La página oficial esta
+          <a href="https://laideal.ar/index.html">aqui</a>
+        </p>
+      </section>
     </footer>
   </body>
 </html>
